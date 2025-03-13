@@ -1,0 +1,664 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sci-Fi Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #0d0d0d, #020202);
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* Neon Glow Effect */
+.glow {
+    color: #0ff;
+    text-shadow: 0px 0px 10px #0ff, 0px 0px 20px #0ff;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 221, 255, 0.7);
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Navigatie futuristische stijl */
+nav {
+    display: flex;
+    width: 100%;
+    top: 7vh;
+    left: 0vw;
+    height: 10vh;
+    align-items: center;
+    background: rgba(0, 221, 255, 0.1);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    /* Zorgt voor goede verdeling */
+    position: fixed;
+    z-index: 1000;
+    /* Hoog houden zodat het bovenop blijft */
+    padding: 0 5vw;
+    /* Voegt ruimte links en rechts toe */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    /* Voegt ruimte tussen de items toe */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0ff;
+    text-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+/* Logo links houden */
+.logoTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+    justify-content: flex-start;
+    margin-right: 20vw;
+    margin-left: 2vw;
+}
+
+
+
+/* Home Content Styling */
+.contentHome {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 7vh;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+}
+
+.firstTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: neon-glow 1.5s infinite alternate;
+    margin-top: 150px;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+    }
+
+    to {
+        text-shadow: 0px 0px 20px #0ff, 0px 0px 40px #0ff;
+    }
+}
+
+/* Titel Stijlen */
+.titleCenter {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0px 0px 10px #0ff;
+}
+
+/* Futuristische Knoppen */
+
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Stijl de video achtergrond */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Zorgt dat de content erboven blijft */
+main,
+header,
+nav,
+footer {
+    z-index: 2;
+}
+
+/* Resultaten pagina */
+
+.contentResult {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 7vh;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Registratieformulier Styling */
+.containerReg {
+    width: 40%;
+    margin: auto;
+    margin-top: 25vh;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.4);
+    text-align: center;
+}
+
+.containerReg h3 {
+    font-size: 28px;
+    margin-bottom: 4vh;
+    color: #00f2ff;
+    text-shadow: 0px 0px 15px #00f2ff;
+}
+
+/* Formuliervelden */
+.formRegister {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formRegister label {
+    display: block;
+    font-weight: bold;
+    color: #00f2ff;
+    margin-bottom: 5px;
+}
+
+.formRegister input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formRegister input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Submitknop */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00D4FF, #0051FF);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+.buttonOne {
+    margin-top: 3vh;
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    box-shadow: 0px 0px 10px rgba(0, 212, 255, 0.7);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 12px 20px;
+    /* Breder voor een betere klikervaring */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.buttonOne:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #003FFF, #00AFFF);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+    padding: 14px 22px;
+    /* Subtiele groei zonder font-schokken */
+}
+
+.roomOne {
+    text-decoration: none;
+    color: white;
+}
+
+/* styling room 1 */
+/* Room 1 Stijlen */
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0ff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+    z-index: 1000;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal h2 {
+    font-size: 2rem;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#answer {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#answer:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Feedback na het antwoorden */
+#feedback {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* gif styling */
+
+#bgGif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(1);
+    opacity: 0.9;
+}
+
+.buttonTwo {
+    background: linear-gradient(90deg, #00FFB3, #0099FF);
+    box-shadow: 0px 0px 15px rgba(0, 255, 179, 0.6), 0px 0px 30px rgba(0, 153, 255, 0.6);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: inline-block;
+    position: fixed;
+    top: 7vh;
+    left: 48vh;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.buttonTwo:hover {
+    transform: scale(1.15) rotate(3deg);
+    /* Maakt de knop dynamischer */
+    background: linear-gradient(90deg, #00FF99, #00CCFF);
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 1), 0px 0px 45px rgba(0, 204, 255, 0.8);
+    padding: 16px 26px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pauzescherm stijl */
+#pauseScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pauseModal {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+#timerDisplay {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    right: 45vw;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#pauseButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#pauseButton:hover {
+    background: linear-gradient(90deg, #00D4FF, #0051FF);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+.pauseButton {
+    position: fixed;
+    top: 46vh;
+    left: 45vw;
+    height: auto;
+    padding: 10px 20px;
+    width: 10vw;
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pauseButton:hover {
+    background: linear-gradient(90deg, #00D4FF, #0051FF);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Box Styling */
+.box {
+    margin-top: 10vh;
+    margin-left: 12vw;
+    width: 120px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent dark background */
+    color: #0ff;
+    /* Neon text color */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+    /* Neon box shadow */
+}
+
+.box:hover {
+    transform: scale(1.1);
+    /* Scale effect on hover */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+    /* Stronger glow on hover */
+}
+
+#pauseScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparante zwarte overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pauseModal {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#bgVideoo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Zorgt ervoor dat de video de hele achtergrond vult */
+    z-index: -1;
+}
+
+.buttonPause {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+
+/* Overzicht styling */
+
+.contentOverzicht {
+    margin: auto;
+    margin-bottom: 10vh;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 7vh;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+}
+
+
+.buttonJoin {
+    margin-top: 3vh;
+    background: linear-gradient(90deg, #0051FF, #00D4FF);
+    box-shadow: 0px 0px 10px rgba(0, 212, 255, 0.7);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 6px 10px;
+    /* Breder voor een betere klikervaring */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.buttonJoin:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #003FFF, #00AFFF);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+    padding: 14px 22px;
+    /* Subtiele groei zonder font-schokken */
+}
+
+.message {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1); /* Licht transparante achtergrond */
+    backdrop-filter: blur(10px); /* Glasachtig effect */
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); /* Subtiele neon-glow */
+    color: #ffffff; /* Witte tekst */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 255, 255, 0.5); /* Glow rand */
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+}
+
+/* Interactief hover-effect */
+.message:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); /* Sterkere glow */
+    transform: scale(1.05); /* Lichte vergroting */
+    border-color: rgba(0, 255, 255, 0.8);
+}
+
+/* Pulsend neon-effect */
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+}
+
+.message {
+    animation: neonGlow 1.5s infinite alternate;
+}
